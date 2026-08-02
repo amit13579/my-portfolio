@@ -6,13 +6,13 @@ import { Reveal, SectionHeader } from "./ui";
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-24 bg-cream-deep">
+    <section id="projects" className="py-14 md:py-16 bg-cream-deep">
       <div className="mx-auto w-[92%] max-w-6xl">
         <SectionHeader eyebrow="04 · What I've Built" title="Featured" accent="Projects" />
 
         {projects.map((p) => (
           <Reveal key={p.num}>
-            <article className="grid md:grid-cols-[290px_1fr] rounded-2xl overflow-hidden border border-ink/10 bg-white shadow-warm mt-8 hover:-translate-y-1.5 hover:border-bronze/35 transition-all group">
+            <article className="grid md:grid-cols-[290px_1fr] rounded-2xl overflow-hidden border border-ink/10 bg-white shadow-warm mt-5 hover:-translate-y-1.5 hover:border-bronze/35 transition-all group">
               <div className="p-7 bg-gradient-to-br from-charcoal to-[#423a31] text-cream-on-dark flex flex-col gap-3">
                 <span className="font-mono text-4xl font-semibold text-[#d8b98c]/40">{p.num}</span>
                 <span className="text-[0.7rem] font-bold uppercase tracking-widest text-[#d8b98c]">{p.type}</span>

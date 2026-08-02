@@ -20,7 +20,7 @@ const infoRows = [
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-24 bg-cream-deep">
+    <section id="contact" className="py-14 md:py-16 bg-cream-deep overflow-x-clip">
       <div className="mx-auto w-[92%] max-w-6xl">
         <SectionHeader
           eyebrow="08 · Let's Connect"

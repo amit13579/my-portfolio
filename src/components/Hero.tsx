@@ -1,8 +1,5 @@
-"use client";
-
-import { motion } from "motion/react";
 import { heroStats, links } from "@/data/portfolio";
-import { StatGrid } from "./ui";
+import { CountUp } from "./ui";
 
 const roles = ["Full Stack Developer (Python)", "Angular · Django · FastAPI", "GenAI · RAG · AI Agents"];
 
@@ -39,110 +36,114 @@ const socials = [
 
 export default function Hero() {
   return (
-    <header id="home" className="relative min-h-svh flex items-center overflow-hidden pt-28 pb-20">
+    <header id="home" className="relative min-h-svh flex items-center overflow-hidden pt-20 pb-10">
       <div className="absolute -top-32 -right-24 w-[480px] h-[480px] rounded-full bg-[#e9d3b3] blur-[120px] opacity-50 pointer-events-none" />
       <div className="absolute -bottom-36 -left-28 w-[420px] h-[420px] rounded-full bg-[#ddc7ac] blur-[120px] opacity-40 pointer-events-none" />
 
-      <div className="relative mx-auto w-[92%] max-w-6xl">
-        <motion.p
-          className="font-mono text-sm text-bronze mb-4"
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          Hi, my name is
-        </motion.p>
+      <div className="relative mx-auto w-[92%] max-w-6xl grid lg:grid-cols-[1.15fr_0.85fr] gap-10 lg:gap-14 items-center">
+        {/* ── Left: identity ── */}
+        <div>
+          <p className="anim-rise font-mono text-sm text-bronze mb-3">Hi, my name is</p>
 
-        <motion.h1
-          className="font-serif text-5xl md:text-7xl font-bold mb-5"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.12 }}
-        >
-          Amit Kumar{" "}
-          <span className="bg-gradient-to-r from-bronze-light to-bronze bg-clip-text text-transparent">Gupta</span>
-        </motion.h1>
+          <h1 className="anim-rise d-1 font-serif text-5xl md:text-6xl xl:text-7xl font-bold mb-4">
+            Amit Kumar{" "}
+            <span className="bg-gradient-to-r from-bronze-light to-bronze bg-clip-text text-transparent">Gupta</span>
+          </h1>
 
-        <motion.div
-          className="flex flex-wrap gap-2.5 mb-7"
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.24 }}
-        >
-          {roles.map((r) => (
-            <span
-              key={r}
-              className="px-4 py-1.5 rounded-full text-sm font-semibold text-bronze bg-bronze/10 border border-bronze/30"
+          <div className="anim-rise d-2 flex flex-wrap gap-2 mb-5">
+            {roles.map((r) => (
+              <span
+                key={r}
+                className="px-3.5 py-1 rounded-full text-[0.82rem] font-semibold text-bronze bg-bronze/10 border border-bronze/30"
+              >
+                {r}
+              </span>
+            ))}
+          </div>
+
+          <p className="anim-rise d-3 max-w-xl text-ink-soft mb-6 leading-relaxed">
+            I ship production software end-to-end — <strong className="text-ink">2+ years</strong> building with{" "}
+            <strong className="text-ink">Python, Django REST, FastAPI, PostgreSQL and Angular 14+</strong>, plus a
+            year of <strong className="text-ink">GenAI engineering</strong> (RAG, LangChain, AI agents). From a
+            company-wide ERP to a rail compensation platform for{" "}
+            <strong className="text-ink">12+ UK train operators</strong>, my systems serve up to{" "}
+            <strong className="text-ink">2,000 concurrent users</strong>.
+          </p>
+
+          <div className="anim-rise d-4 flex flex-wrap gap-3 mb-6">
+            <a
+              href="#about"
+              className="px-6 py-3 rounded-xl font-semibold bg-charcoal text-cream-on-dark shadow-lg hover:bg-charcoal-2 hover:-translate-y-0.5 transition-all"
             >
-              {r}
-            </span>
-          ))}
-        </motion.div>
-
-        <motion.p
-          className="max-w-3xl text-ink-soft mb-9 leading-relaxed"
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.36 }}
-        >
-          I&apos;m a Full Stack Developer with <strong className="text-ink">2+ years</strong> of experience shipping
-          production applications in{" "}
-          <strong className="text-ink">Python, Django REST Framework, FastAPI, PostgreSQL and Angular 14+</strong>,
-          plus a year of hands-on <strong className="text-ink">Generative AI</strong> engineering — LLMs, RAG
-          pipelines, LangChain and autonomous AI agents. At Divyal Technology I&apos;ve delivered{" "}
-          <strong className="text-ink">4+ production systems</strong> serving up to{" "}
-          <strong className="text-ink">2,000 concurrent users</strong> — from a company-wide ERP procurement module to
-          a multi-tenant rail compensation platform for 12+ UK train operators. If you&apos;re looking for someone who
-          can own a feature from database schema to polished UI — let&apos;s talk.
-        </motion.p>
-
-        <motion.div
-          className="flex flex-wrap gap-3.5 mb-9"
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.48 }}
-        >
-          <a
-            href="#about"
-            className="px-7 py-3 rounded-xl font-semibold bg-charcoal text-cream-on-dark shadow-lg hover:bg-charcoal-2 hover:-translate-y-0.5 transition-all"
-          >
-            Learn More About Me
-          </a>
-          <a
-            href="#contact"
-            className="px-7 py-3 rounded-xl font-semibold text-bronze border-[1.5px] border-bronze/40 hover:bg-bronze/10 hover:-translate-y-0.5 transition-all"
-          >
-            Get In Touch
-          </a>
-          <a
-            href={links.resume}
-            download
-            className="px-7 py-3 rounded-xl font-semibold text-bronze border-[1.5px] border-bronze/40 hover:bg-bronze/10 hover:-translate-y-0.5 transition-all"
-          >
-            ⬇ Download Resume
-          </a>
-        </motion.div>
-
-        <div className="flex gap-3.5 mb-12">
-          {socials.map((s, i) => (
-            <motion.a
-              key={s.label}
-              href={s.href}
-              target={s.href.startsWith("http") ? "_blank" : undefined}
-              rel="noopener"
-              aria-label={s.label}
-              className="grid place-items-center w-11 h-11 rounded-xl bg-white border border-ink/10 text-ink-soft hover:text-bronze hover:border-bronze/40 hover:-translate-y-1 transition-all shadow-warm-sm"
-              initial={{ scale: 0, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{ delay: 0.65 + i * 0.12, type: "spring", stiffness: 320, damping: 16 }}
+              Learn More About Me
+            </a>
+            <a
+              href="#contact"
+              className="px-6 py-3 rounded-xl font-semibold text-bronze border-[1.5px] border-bronze/40 hover:bg-bronze/10 hover:-translate-y-0.5 transition-all"
             >
-              {s.icon}
-            </motion.a>
-          ))}
+              Get In Touch
+            </a>
+            <a
+              href={links.resume}
+              download
+              className="px-6 py-3 rounded-xl font-semibold text-bronze border-[1.5px] border-bronze/40 hover:bg-bronze/10 hover:-translate-y-0.5 transition-all"
+            >
+              ⬇ Resume
+            </a>
+          </div>
+
+          <div className="flex gap-3">
+            {socials.map((s, i) => (
+              <a
+                key={s.label}
+                href={s.href}
+                target={s.href.startsWith("http") ? "_blank" : undefined}
+                rel="noopener"
+                aria-label={s.label}
+                className={`anim-pop d-${i + 4} grid place-items-center w-11 h-11 rounded-xl bg-white border border-ink/10 text-ink-soft hover:text-bronze hover:border-bronze/40 hover:-translate-y-1 transition-all shadow-warm-sm`}
+              >
+                {s.icon}
+              </a>
+            ))}
+          </div>
         </div>
 
-        <StatGrid stats={heroStats} />
+        {/* ── Right: photo + stats ── */}
+        <div className="hidden sm:block">
+          <div className="anim-rise d-2 relative max-w-[330px] mx-auto lg:ml-auto">
+            <div className="absolute -inset-3 rounded-[28px] border border-bronze/30 translate-x-3 translate-y-3" />
+            <img
+              src="assets/profile-photo.jpg"
+              alt="Amit Kumar Gupta"
+              fetchPriority="high"
+              className="relative w-full aspect-[4/5] object-cover rounded-[24px] border border-ink/10 shadow-warm"
+            />
+            <p className="absolute bottom-3 left-3 right-3 text-center font-mono text-[0.7rem] text-cream-on-dark bg-charcoal/80 backdrop-blur-sm rounded-xl py-2">
+              📍 Bhilai, Chhattisgarh, India
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 gap-3 max-w-[360px] mx-auto lg:ml-auto mt-7">
+            {heroStats.map((s, i) => (
+              <div
+                key={s.label}
+                className={`anim-rise d-${i + 3} rounded-2xl bg-white/90 border border-ink/10 shadow-warm-sm px-3 py-3.5 text-center`}
+              >
+                <CountUp value={s.value} suffix={s.suffix} />
+                <span className="block mt-0.5 text-[0.7rem] text-ink-soft">{s.label}</span>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
+
+      <a
+        href="#about"
+        aria-label="Scroll down"
+        className="absolute left-1/2 -translate-x-1/2 bottom-5 w-6 h-10 rounded-2xl border-2 border-ink-soft/50 hidden md:flex justify-center pt-1.5 opacity-60"
+      >
+        <span className="w-1 h-2 rounded bg-bronze animate-bounce" />
+      </a>
     </header>
   );
 }

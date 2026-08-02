@@ -5,11 +5,11 @@ import { Reveal, SectionHeader } from "./ui";
 
 export default function Education() {
   return (
-    <section id="education" className="py-24">
+    <section id="education" className="py-14 md:py-16">
       <div className="mx-auto w-[92%] max-w-6xl">
         <SectionHeader eyebrow="03 · Where I Studied" title="My" accent="Education" />
 
-        <div className="grid md:grid-cols-3 gap-5 mt-8">
+        <div className="grid md:grid-cols-3 gap-4 mt-3">
           {education.map((edu, i) => (
             <Reveal key={edu.degree} y={i === 0 ? -50 : 50} delay={i * 0.1}>
               <div className="h-full rounded-2xl bg-white border border-ink/10 shadow-warm-sm p-7 hover:-translate-y-1.5 hover:border-bronze/35 hover:shadow-warm transition-all">

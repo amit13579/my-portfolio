@@ -30,8 +30,34 @@ body {
   background: var(--color-cream);
   color: var(--color-ink);
   font-family: var(--font-sans);
+  /* off-screen x-translated reveal elements must never widen the page */
+  overflow-x: clip;
 }
 
 ::selection {
   background: rgba(154, 107, 63, 0.25);
+}
+
+/* CSS-only entrance animations — render instantly with the HTML,
+   no JavaScript required for the first paint */
+@keyframes rise {
+  from { opacity: 0; transform: translateY(22px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes pop {
+  0% { opacity: 0; transform: scale(0.4); }
+  70% { transform: scale(1.08); }
+  100% { opacity: 1; transform: scale(1); }
+}
+.anim-rise { animation: rise 0.65s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.anim-pop { animation: pop 0.5s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.d-1 { animation-delay: 0.08s; }
+.d-2 { animation-delay: 0.16s; }
+.d-3 { animation-delay: 0.24s; }
+.d-4 { animation-delay: 0.32s; }
+.d-5 { animation-delay: 0.4s; }
+.d-6 { animation-delay: 0.48s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .anim-rise, .anim-pop { animation: none; }
 }

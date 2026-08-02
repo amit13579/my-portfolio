@@ -5,13 +5,13 @@ import { Reveal, SectionHeader } from "./ui";
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-24 bg-cream-deep">
+    <section id="experience" className="py-14 md:py-16 bg-cream-deep overflow-x-clip">
       <div className="mx-auto w-[92%] max-w-6xl">
         <SectionHeader eyebrow="02 · Where I've Worked" title="Work" accent="Experience" />
 
         {experience.map((xp, i) => (
           <Reveal key={xp.company} x={i % 2 === 0 ? -60 : 60} y={0}>
-            <div className="grid md:grid-cols-[270px_1fr] rounded-2xl overflow-hidden border border-ink/10 bg-white shadow-warm mt-8 hover:-translate-y-1.5 hover:border-bronze/35 transition-all">
+            <div className="grid md:grid-cols-[270px_1fr] rounded-2xl overflow-hidden border border-ink/10 bg-white shadow-warm mt-5 hover:-translate-y-1.5 hover:border-bronze/35 transition-all">
               <div className="p-7 bg-gradient-to-br from-charcoal to-charcoal-2 text-cream-on-dark">
                 <span
                   className={`inline-block px-3 py-1 rounded-full text-[0.68rem] font-bold uppercase tracking-wider mb-3.5 border ${

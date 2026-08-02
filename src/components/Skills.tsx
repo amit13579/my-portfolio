@@ -41,11 +41,11 @@ function SkillRow({ name, pct, delay }: { name: string; pct: number; delay: numb
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-24">
+    <section id="skills" className="py-14 md:py-16">
       <div className="mx-auto w-[92%] max-w-6xl">
         <SectionHeader eyebrow="05 · What I Work With" title="Technical" accent="Skills" />
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mt-3">
           {skills.map((cat, i) => (
             <motion.div
               key={cat.category}

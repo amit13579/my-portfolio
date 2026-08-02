@@ -42,11 +42,11 @@ export function Certifications() {
   const [zoom, setZoom] = useState<string | null>(null);
 
   return (
-    <section id="certifications" className="py-24 bg-cream-deep">
+    <section id="certifications" className="py-14 md:py-16 bg-cream-deep">
       <div className="mx-auto w-[92%] max-w-6xl">
         <SectionHeader eyebrow="06 · Proof of Learning" title="My" accent="Certifications" />
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mt-3">
           {certifications.map((c, i) => (
             <motion.div
               key={c.title}
@@ -87,7 +87,7 @@ export function Achievements() {
   const [zoom, setZoom] = useState<string | null>(null);
 
   return (
-    <section id="achievements" className="py-24">
+    <section id="achievements" className="py-14 md:py-16">
       <div className="mx-auto w-[92%] max-w-6xl">
         <SectionHeader
           eyebrow="07 · Recognition"
@@ -96,7 +96,7 @@ export function Achievements() {
           sub="Milestones that shaped me — from competitive internships to production impact."
         />
 
-        <div className="mb-11">
+        <div className="mb-8">
           <StatGrid stats={achievementStats} />
         </div>
 
