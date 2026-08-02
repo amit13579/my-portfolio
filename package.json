@@ -7,7 +7,8 @@
     "build": "next build --turbopack",
     "start": "next start",
     "lint": "eslint",
-    "test:e2e": "node e2e-check.mjs"
+    "test:e2e": "node e2e-check.mjs",
+    "test:devices": "node device-check.mjs"
   },
   "dependencies": {
     "motion": "^12.43.0",

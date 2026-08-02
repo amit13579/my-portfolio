@@ -88,7 +88,10 @@ export default function Hero() {
               download
               className="px-6 py-3 rounded-xl font-semibold text-bronze border-[1.5px] border-bronze/40 hover:bg-bronze/10 hover:-translate-y-0.5 transition-all"
             >
-              ⬇ Resume
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="inline w-4 h-4 mr-1.5 -mt-0.5">
+                <path d="M12 3v12m0 0 4-4m-4 4-4-4M4 21h16" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+              Resume
             </a>
           </div>
 
@@ -109,21 +112,20 @@ export default function Hero() {
         </div>
 
         {/* ── Right: photo + stats ── */}
-        <div className="hidden sm:block">
-          <div className="anim-rise d-2 relative max-w-[330px] mx-auto lg:ml-auto">
-            <div className="absolute -inset-3 rounded-[28px] border border-bronze/30 translate-x-3 translate-y-3" />
+        <div>
+          <div className="anim-rise d-2 relative max-w-[240px] sm:max-w-[300px] lg:max-w-[330px] mx-auto lg:ml-auto">
             <img
               src="assets/profile-photo.jpg"
               alt="Amit Kumar Gupta"
               fetchPriority="high"
-              className="relative w-full aspect-[4/5] object-cover rounded-[24px] border border-ink/10 shadow-warm"
+              className="w-full aspect-[4/5] object-cover object-top rounded-3xl shadow-warm"
             />
-            <p className="absolute bottom-3 left-3 right-3 text-center font-mono text-[0.7rem] text-cream-on-dark bg-charcoal/80 backdrop-blur-sm rounded-xl py-2">
+            <p className="absolute bottom-3 left-3 right-3 text-center font-mono text-[0.68rem] text-cream-on-dark bg-charcoal/80 backdrop-blur-sm rounded-xl py-2">
               📍 Bhilai, Chhattisgarh, India
             </p>
           </div>
 
-          <div className="grid grid-cols-2 gap-3 max-w-[360px] mx-auto lg:ml-auto mt-7">
+          <div className="grid grid-cols-2 gap-3 max-w-[340px] sm:max-w-[360px] mx-auto lg:ml-auto mt-6">
             {heroStats.map((s, i) => (
               <div
                 key={s.label}

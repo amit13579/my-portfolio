@@ -42,7 +42,7 @@ export default function Navbar() {
             <li key={href}>
               <a
                 href={href}
-                className="px-3 py-2 rounded-lg text-sm font-medium text-ink-soft hover:text-ink hover:bg-ink/5 transition-colors"
+                className="px-3 py-2.5 rounded-lg text-sm font-medium text-ink-soft hover:text-ink hover:bg-ink/5 transition-colors"
               >
                 {label}
               </a>
