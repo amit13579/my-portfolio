@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amit Kumar Gupta — Full Stack Developer (Python) · Angular · GenAI</title>
+  <meta name="description" content="Portfolio of Amit Kumar Gupta — Full Stack Developer with 2+ years building production apps in Python, Django REST Framework, FastAPI, PostgreSQL and Angular 14+, plus 1 year of GenAI engineering (LLMs, RAG, LangChain, AI Agents)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Amit Kumar Gupta — Full Stack Developer (Python) · Angular · GenAI" />
+  <meta property="og:description" content="2+ years shipping production apps in Python, Django REST Framework, FastAPI, PostgreSQL and Angular 14+ — plus GenAI engineering with RAG, LangChain and AI agents." />
+  <meta property="og:url" content="https://amit13579.github.io/my-portfolio/" />
+  <meta property="og:image" content="https://amit13579.github.io/my-portfolio/assets/profile-photo.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1120'/%3E%3Ctext x='32' y='42' font-family='Arial' font-size='28' font-weight='bold' fill='%2338bdf8' text-anchor='middle'%3EAK%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <!-- ══════════ NAVBAR ══════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner container">
+      <a href="#home" class="nav-logo"><span class="logo-badge">AK</span><span class="logo-name">Amit Kumar Gupta</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- ══════════ HERO / LANDING ══════════ -->
+  <header class="hero" id="home">
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+    <div class="container hero-inner">
+      <p class="hero-hello mono" data-anim="hero">Hi, my name is</p>
+      <h1 class="hero-name" data-anim="hero">Amit Kumar <span class="grad-text">Gupta</span></h1>
+      <div class="hero-roles" data-anim="hero">
+        <span class="role-chip">Full Stack Developer (Python)</span>
+        <span class="role-chip">Angular · Django · FastAPI</span>
+        <span class="role-chip">GenAI · RAG · AI Agents</span>
+      </div>
+      <p class="hero-intro" data-anim="hero">
+        I'm a Full Stack Developer with <strong>2+ years</strong> of experience shipping production applications in
+        <strong>Python, Django REST Framework, FastAPI, PostgreSQL and Angular 14+</strong>, plus a year of hands-on
+        <strong>Generative AI</strong> engineering — LLMs, RAG pipelines, LangChain and autonomous AI agents.
+        At Divyal Technology I've delivered <strong>4+ production systems</strong> serving up to
+        <strong>2,000 concurrent users</strong> — from a company-wide ERP procurement module to a multi-tenant rail
+        compensation platform for 12+ UK train operators. I care about clean architecture, measurable performance
+        wins, and building software that solves real business problems. If you're looking for someone who can own a
+        feature from database schema to polished UI — let's talk.
+      </p>
+      <div class="hero-ctas" data-anim="hero">
+        <a href="#about" class="btn btn-primary">Learn More About Me</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        <a href="assets/Amit-Kumar-Gupta-Resume.pdf" download class="btn btn-outline">⬇ Download Resume</a>
+      </div>
+      <div class="hero-socials" id="heroSocials">
+        <a href="https://github.com/amit13579" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.26 5.66.41.36.78 1.06.78 2.14 0 1.54-.01 2.79-.01 3.17 0 .31.21.68.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/amit-kumar-gupta" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.55V9h3.57v11.45z"/></svg>
+        </a>
+        <a href="mailto:amitkumargupta13579@gmail.com" aria-label="Email" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7L22 7"/></svg>
+        </a>
+      </div>
+      <div class="hero-stats" id="heroStats">
+        <div class="stat"><span class="stat-num" data-count="2">0</span><span class="stat-plus">+</span><span class="stat-label">Years Experience</span></div>
+        <div class="stat"><span class="stat-num" data-count="35">0</span><span class="stat-plus">+</span><span class="stat-label">REST APIs Shipped</span></div>
+        <div class="stat"><span class="stat-num" data-count="4">0</span><span class="stat-plus">+</span><span class="stat-label">Production Systems</span></div>
+        <div class="stat"><span class="stat-num" data-count="2000">0</span><span class="stat-plus">+</span><span class="stat-label">Concurrent Users Served</span></div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+  </header>
+
+  <main>
+
+  <!-- ══════════ ABOUT ══════════ -->
+  <section class="section" id="about">
+    <div class="container">
+      <p class="section-eyebrow mono">01 · Who I Am</p>
+      <h2 class="section-title">About <span class="grad-text">Me</span></h2>
+      <div class="about-grid">
+        <div class="about-photo-wrap" id="aboutPhoto">
+          <div class="photo-frame">
+            <img src="assets/profile-photo.jpg" alt="Amit Kumar Gupta — profile photo" loading="lazy" />
+          </div>
+          <div class="photo-badge mono">Bhilai, Chhattisgarh, India</div>
+        </div>
+        <div class="about-text">
+          <p>
+            I'm a <strong>Full Stack Developer (Python)</strong> at <strong>Divyal Technology Pvt. Ltd.</strong>, where I've
+            spent the last two years building and shipping production software — ERP/CRM systems, a parking management
+            platform, ticketing and e-commerce products, and <strong>RailPay</strong>, a multi-tenant "Delay Repay"
+            compensation platform serving 12+ UK train operating companies.
+          </p>
+          <p>
+            On the backend I work in <strong>Python with Django REST Framework and FastAPI</strong> — designing PostgreSQL
+            schemas, securing APIs with JWT and role-based access control, and squeezing out performance with query
+            optimization, Redis caching and async task queues (40% faster response times on the systems I've tuned).
+            On the frontend I build <strong>Angular 14+ / TypeScript</strong> single-page applications with RxJS real-time
+            dashboards, reactive forms and lazy-loaded modules.
+          </p>
+          <p>
+            For the past year I've also been deep in <strong>Generative AI</strong> — building RAG chatbots over private
+            document sets with LangChain and vector databases (FAISS, ChromaDB), and multi-agent workflows with LangGraph,
+            CrewAI and MCP. I hold a <strong>PG Diploma in Advanced Computing from C-DAC ACTS Pune (Grade A)</strong> and a
+            B.Tech in Computer Science. What sets me apart: I own features end-to-end — schema, API, UI, deployment — and
+            I measure my work in numbers, not adjectives.
+          </p>
+          <div class="mv-grid">
+            <div class="mv-card" data-flip="1">
+              <h3>🎯 Mission</h3>
+              <p>To build software that is fast, secure and genuinely useful — turning complex business workflows into clean, reliable systems that people depend on every day.</p>
+            </div>
+            <div class="mv-card" data-flip="2">
+              <h3>🚀 Vision</h3>
+              <p>To grow into an engineer who bridges classic full-stack craftsmanship with applied AI — shipping intelligent products that raise the bar for what web applications can do.</p>
+            </div>
+          </div>
+          <div class="about-nav-btns" id="aboutNavBtns">
+            <a href="#experience" class="chip-btn">💼 Work Experience</a>
+            <a href="#education" class="chip-btn">🎓 Education</a>
+            <a href="#projects" class="chip-btn">🛠 Projects</a>
+            <a href="#skills" class="chip-btn">⚡ Skills</a>
+            <a href="#certifications" class="chip-btn">📜 Certifications</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ EXPERIENCE ══════════ -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <p class="section-eyebrow mono">02 · Where I've Worked</p>
+      <h2 class="section-title">Work <span class="grad-text">Experience</span></h2>
+
+      <div class="xp-card" data-xp="left">
+        <div class="xp-side">
+          <span class="xp-badge badge-fulltime">Full-time</span>
+          <h3 class="xp-role">Full Stack Developer (Python)</h3>
+          <p class="xp-company">Divyal Technology Pvt. Ltd.</p>
+          <p class="xp-meta mono">📍 Bhilai, India<br />🗓 April 2024 — Present</p>
+        </div>
+        <div class="xp-body">
+          <h4>Key Responsibilities</h4>
+          <ul class="xp-list">
+            <li>Build Angular 14+ / TypeScript SPAs for ERP/CRM, parking, ticketing and e-commerce platforms — lazy-loaded modules, RxJS real-time dashboards, HTTP interceptors and role-filtered route guards.</li>
+            <li>Design and ship Swagger-documented REST APIs with Django REST Framework and FastAPI, secured with JWT refresh-token rotation and field-level RBAC.</li>
+            <li>Own PostgreSQL schema design, query optimization, indexing and Redis caching for high-traffic endpoints.</li>
+            <li>Deploy with Docker and Nginx on AWS EC2 through Jenkins/Bitbucket CI/CD in an Agile Scrum team.</li>
+          </ul>
+          <h4>Key Achievements</h4>
+          <ul class="xp-list xp-achievements">
+            <li><strong>Shipped 35+ production REST APIs</strong> serving 500–2,000 concurrent users across 4+ live systems.</li>
+            <li><strong>Cut API response times by 40%</strong> through query optimization, indexing, Redis caching and async task queues.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="xp-card" data-xp="right">
+        <div class="xp-side">
+          <span class="xp-badge badge-intern">Internship</span>
+          <h3 class="xp-role">Java Developer</h3>
+          <p class="xp-company">Oasis Infobyte</p>
+          <p class="xp-meta mono">📍 Remote (Delhi)<br />🗓 Feb 2024 — Apr 2024</p>
+        </div>
+        <div class="xp-body">
+          <h4>Highlights</h4>
+          <ul class="xp-list">
+            <li>Completed the AICTE-recognised OIB-SIP internship in Java Development with "wonderful remarks".</li>
+            <li>Built Java console and web mini-applications, strengthening OOP fundamentals and clean-code habits.</li>
+            <li>Practised structured Git workflows and task-based delivery on a remote team.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="xp-card" data-xp="left">
+        <div class="xp-side">
+          <span class="xp-badge badge-intern">Internship</span>
+          <h3 class="xp-role">Java Web Developer</h3>
+          <p class="xp-company">CodeAlpha</p>
+          <p class="xp-meta mono">📍 Remote (Hyderabad)<br />🗓 Jan 2024 — Mar 2024</p>
+        </div>
+        <div class="xp-body">
+          <h4>Highlights</h4>
+          <ul class="xp-list">
+            <li>Completed a virtual internship program in Java Programming, recognised with a Certificate of Achievement.</li>
+            <li>Developed Java web exercises and mini-projects with dedication across a structured 4-week program.</li>
+            <li>Gained early exposure to servlet/JSP-style request handling and MVC thinking.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ EDUCATION ══════════ -->
+  <section class="section" id="education">
+    <div class="container">
+      <p class="section-eyebrow mono">03 · Where I Studied</p>
+      <h2 class="section-title">My <span class="grad-text">Education</span></h2>
+      <div class="edu-grid">
+        <div class="edu-card" data-edu="drop">
+          <div class="edu-icon">🎓</div>
+          <span class="edu-mode mono">Full-time · Grade A</span>
+          <h3>PG Diploma in Advanced Computing (PG-DAC)</h3>
+          <p class="edu-inst">C-DAC, Advanced Computing Training School — Pune</p>
+          <p class="edu-dur mono">2023 — 2024</p>
+          <ul class="edu-points">
+            <li>900-hour full-time postgraduate program; graduated with <strong>Grade A</strong>.</li>
+            <li>Core modules: Algorithms &amp; Data Structures (Java), OOP with Java, Web Programming Technologies, Database Technologies, .NET, OS concepts.</li>
+            <li>Capstone project plus software development methodologies and aptitude/communication training.</li>
+          </ul>
+        </div>
+        <div class="edu-card" data-edu="rise">
+          <div class="edu-icon">🏛</div>
+          <span class="edu-mode mono">Full-time</span>
+          <h3>B.Tech — Computer Science &amp; Engineering</h3>
+          <p class="edu-inst">Rungta College of Engineering &amp; Technology (CSVTU), Bhilai</p>
+          <p class="edu-dur mono">2018 — 2022</p>
+          <ul class="edu-points">
+            <li>Four-year engineering degree with a Computer Science &amp; Engineering major.</li>
+            <li>Foundations in programming, data structures, DBMS, operating systems and computer networks.</li>
+            <li>Completed industrial training in web development (HTML, CSS, MySQL, PHP, JavaScript) alongside the degree.</li>
+          </ul>
+        </div>
+        <div class="edu-card" data-edu="rise">
+          <div class="edu-icon">🏫</div>
+          <span class="edu-mode mono">Schooling</span>
+          <h3>Senior Secondary (Science)</h3>
+          <p class="edu-inst">M.G.M. Senior Secondary School, Bhilai</p>
+          <p class="edu-dur mono">Completed 2018</p>
+          <ul class="edu-points">
+            <li>Higher secondary education with a computer science focus.</li>
+            <li>Built the early foundations in mathematics and logic that led to engineering.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ PROJECTS ══════════ -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <p class="section-eyebrow mono">04 · What I've Built</p>
+      <h2 class="section-title">Featured <span class="grad-text">Projects</span></h2>
+
+      <article class="proj-card" data-proj>
+        <div class="proj-side">
+          <span class="proj-num mono">01</span>
+          <span class="proj-type">Production · ERP</span>
+          <h3>ERP/CRM — Stock &amp; Procurement Management</h3>
+        </div>
+        <div class="proj-body">
+          <p class="proj-desc">
+            The complete procurement-to-inventory module of a company-wide ERP, covering the full material lifecycle —
+            from purchase requisition to warehouse stock. Built the end-to-end PR → PO → Gate Entry → GRN → Inventory
+            workflow with concurrency-safe document numbering and PDF generation.
+          </p>
+          <div class="proj-outcomes">
+            <div class="outcome"><span class="mono">1</span>End-to-end procurement workflow with concurrency-safe sequential document numbers and GRN/PO PDF generation.</div>
+            <div class="outcome"><span class="mono">2</span>Real-time per-warehouse stock balance tracking with unit conversion and PO reconciliation.</div>
+            <div class="outcome"><span class="mono">3</span>Gate Pass issuance and warehouse-to-warehouse transfers with automatic stock adjustment and reversal on delete.</div>
+            <div class="outcome"><span class="mono">4</span>Dynamic Reactive Forms/FormArray rows, cascading dropdowns, server-side paginated DataTables, role-based menus.</div>
+          </div>
+          <div class="proj-tags">
+            <span>Angular 14+</span><span>TypeScript</span><span>RxJS</span><span>Django REST</span><span>PostgreSQL</span><span>Redis</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="proj-card" data-proj>
+        <div class="proj-side">
+          <span class="proj-num mono">02</span>
+          <span class="proj-type">Production · FinTech / Rail</span>
+          <h3>RailPay — Multi-Tenant Rail Compensation Platform</h3>
+        </div>
+        <div class="proj-body">
+          <p class="proj-desc">
+            A white-labelled "Delay Repay" compensation platform serving 12+ UK Train Operating Companies — a public
+            portal where passengers submit claims and an internal agent portal where staff validate and pay them, on one
+            shared multi-tenant database.
+          </p>
+          <div class="proj-outcomes">
+            <div class="outcome"><span class="mono">1</span>Multi-tenant claims workflows — submission, validation, approval, appeals and payout tracking under per-operator branding and rules.</div>
+            <div class="outcome"><span class="mono">2</span>Automatic delay verification against Darwin live train-running data and the NRE OJP journey planner.</div>
+            <div class="outcome"><span class="mono">3</span>Payout integrations: PayPal, Realex/Global Payments (card) and BACS bank transfer, with SendGrid email and Twilio SMS.</div>
+            <div class="outcome"><span class="mono">4</span>Secured with RBAC, session security and full audit logging of claims, payments and user actions.</div>
+          </div>
+          <div class="proj-tags">
+            <span>Python</span><span>REST APIs</span><span>PayPal</span><span>Global Payments</span><span>Darwin API</span><span>SendGrid</span><span>Twilio</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="proj-card" data-proj>
+        <div class="proj-side">
+          <span class="proj-num mono">03</span>
+          <span class="proj-type">Production · SaaS Dashboard</span>
+          <h3>Parking Management System</h3>
+        </div>
+        <div class="proj-body">
+          <p class="proj-desc">
+            An end-to-end vehicle parking platform: booking, entry/exit management and live slot tracking for facility
+            operators, with a real-time Angular admin dashboard on a Django REST + PostgreSQL backend.
+          </p>
+          <div class="proj-outcomes">
+            <div class="outcome"><span class="mono">1</span>Django REST APIs with JWT auth and RBAC over an indexed PostgreSQL schema for vehicles, slots, bookings and events.</div>
+            <div class="outcome"><span class="mono">2</span>Redis caching for hot slot-availability reads.</div>
+            <div class="outcome"><span class="mono">3</span>Angular SPA with RxJS BehaviorSubject real-time slot updates, Material data tables and role-guarded navigation.</div>
+            <div class="outcome"><span class="mono">4</span>Dockerized deployment on AWS EC2 with CI/CD.</div>
+          </div>
+          <div class="proj-tags">
+            <span>Angular 14+</span><span>Django REST</span><span>PostgreSQL</span><span>Redis</span><span>Docker</span><span>AWS EC2</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="proj-card" data-proj>
+        <div class="proj-side">
+          <span class="proj-num mono">04</span>
+          <span class="proj-type">GenAI · Self-driven</span>
+          <h3>GenAI — RAG Document Q&amp;A &amp; AI Agents</h3>
+        </div>
+        <div class="proj-body">
+          <p class="proj-desc">
+            A year of hands-on AI engineering building production-style Generative AI applications — retrieval-augmented
+            generation chatbots over private document sets and autonomous multi-step AI agent workflows.
+          </p>
+          <div class="proj-outcomes">
+            <div class="outcome"><span class="mono">1</span>Full RAG pipeline: chunking, embeddings, vector storage (FAISS / ChromaDB), similarity-search retrieval and grounded answer synthesis.</div>
+            <div class="outcome"><span class="mono">2</span>AI agents with tool calling that invoke APIs and functions to complete multi-step tasks autonomously.</div>
+            <div class="outcome"><span class="mono">3</span>Multi-agent orchestration with LangGraph and CrewAI, plus MCP (Model Context Protocol) for tool integration.</div>
+            <div class="outcome"><span class="mono">4</span>Prompt-engineering patterns for reliable, grounded LLM outputs.</div>
+          </div>
+          <div class="proj-tags">
+            <span>OpenAI API</span><span>LangChain</span><span>LangGraph</span><span>CrewAI</span><span>FAISS</span><span>ChromaDB</span><span>MCP</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ══════════ SKILLS ══════════ -->
+  <section class="section" id="skills">
+    <div class="container">
+      <p class="section-eyebrow mono">05 · What I Work With</p>
+      <h2 class="section-title">Technical <span class="grad-text">Skills</span></h2>
+      <div class="skills-grid">
+        <div class="skill-card" data-skill>
+          <h3><span class="skill-ico">🖥</span> Frontend</h3>
+          <div class="skill-row"><span>Angular 14+</span><div class="bar"><i data-w="90"></i></div><b>90%</b></div>
+          <div class="skill-row"><span>TypeScript</span><div class="bar"><i data-w="88"></i></div><b>88%</b></div>
+          <div class="skill-row"><span>RxJS</span><div class="bar"><i data-w="85"></i></div><b>85%</b></div>
+          <div class="skill-row"><span>Angular Material</span><div class="bar"><i data-w="88"></i></div><b>88%</b></div>
+          <div class="skill-row"><span>Tailwind CSS</span><div class="bar"><i data-w="80"></i></div><b>80%</b></div>
+          <div class="skill-row"><span>Vue.js 3</span><div class="bar"><i data-w="74"></i></div><b>74%</b></div>
+        </div>
+        <div class="skill-card" data-skill>
+          <h3><span class="skill-ico">⚙️</span> Backend</h3>
+          <div class="skill-row"><span>Python</span><div class="bar"><i data-w="92"></i></div><b>92%</b></div>
+          <div class="skill-row"><span>Django REST Framework</span><div class="bar"><i data-w="90"></i></div><b>90%</b></div>
+          <div class="skill-row"><span>FastAPI</span><div class="bar"><i data-w="85"></i></div><b>85%</b></div>
+          <div class="skill-row"><span>REST API Design</span><div class="bar"><i data-w="90"></i></div><b>90%</b></div>
+          <div class="skill-row"><span>Celery · Redis · WebSockets</span><div class="bar"><i data-w="80"></i></div><b>80%</b></div>
+          <div class="skill-row"><span>Node.js · Express</span><div class="bar"><i data-w="72"></i></div><b>72%</b></div>
+        </div>
+        <div class="skill-card" data-skill>
+          <h3><span class="skill-ico">🗄</span> Databases</h3>
+          <div class="skill-row"><span>PostgreSQL</span><div class="bar"><i data-w="88"></i></div><b>88%</b></div>
+          <div class="skill-row"><span>MySQL</span><div class="bar"><i data-w="84"></i></div><b>84%</b></div>
+          <div class="skill-row"><span>Query Optimization</span><div class="bar"><i data-w="85"></i></div><b>85%</b></div>
+          <div class="skill-row"><span>Schema Design &amp; Indexing</span><div class="bar"><i data-w="86"></i></div><b>86%</b></div>
+        </div>
+        <div class="skill-card" data-skill>
+          <h3><span class="skill-ico">🤖</span> AI / Generative AI</h3>
+          <div class="skill-row"><span>LLMs · Prompt Engineering</span><div class="bar"><i data-w="85"></i></div><b>85%</b></div>
+          <div class="skill-row"><span>RAG Pipelines</span><div class="bar"><i data-w="85"></i></div><b>85%</b></div>
+          <div class="skill-row"><span>LangChain · LangGraph</span><div class="bar"><i data-w="82"></i></div><b>82%</b></div>
+          <div class="skill-row"><span>Vector DBs (FAISS, ChromaDB)</span><div class="bar"><i data-w="80"></i></div><b>80%</b></div>
+          <div class="skill-row"><span>AI Agents · CrewAI · MCP</span><div class="bar"><i data-w="78"></i></div><b>78%</b></div>
+        </div>
+        <div class="skill-card" data-skill>
+          <h3><span class="skill-ico">☁️</span> Cloud &amp; DevOps</h3>
+          <div class="skill-row"><span>AWS (EC2, S3)</span><div class="bar"><i data-w="80"></i></div><b>80%</b></div>
+          <div class="skill-row"><span>Docker · Nginx</span><div class="bar"><i data-w="82"></i></div><b>82%</b></div>
+          <div class="skill-row"><span>CI/CD (Jenkins, Bitbucket)</span><div class="bar"><i data-w="78"></i></div><b>78%</b></div>
+          <div class="skill-row"><span>Linux Server Admin</span><div class="bar"><i data-w="78"></i></div><b>78%</b></div>
+          <div class="skill-row"><span>Git</span><div class="bar"><i data-w="90"></i></div><b>90%</b></div>
+        </div>
+        <div class="skill-card" data-skill>
+          <h3><span class="skill-ico">🔐</span> Security &amp; Tools</h3>
+          <div class="skill-row"><span>JWT · OAuth2 · RBAC</span><div class="bar"><i data-w="86"></i></div><b>86%</b></div>
+          <div class="skill-row"><span>XSS/CSRF Protection · Audit Logs</span><div class="bar"><i data-w="82"></i></div><b>82%</b></div>
+          <div class="skill-row"><span>Postman · Swagger/OpenAPI</span><div class="bar"><i data-w="88"></i></div><b>88%</b></div>
+          <div class="skill-row"><span>JIRA · Agile Scrum</span><div class="bar"><i data-w="85"></i></div><b>85%</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ CERTIFICATIONS ══════════ -->
+  <section class="section section-alt" id="certifications">
+    <div class="container">
+      <p class="section-eyebrow mono">06 · Proof of Learning</p>
+      <h2 class="section-title">My <span class="grad-text">Certifications</span></h2>
+      <div class="cert-grid">
+        <div class="cert-card" data-cert>
+          <div class="cert-img"><img src="assets/certificates/genai-data-analytics-tata-forage.jpg" alt="GenAI Powered Data Analytics Job Simulation certificate — Tata / Forage" loading="lazy" /></div>
+          <div class="cert-info">
+            <span class="cert-provider">Tata Group · Forage</span>
+            <h3>GenAI Powered Data Analytics — Job Simulation</h3>
+            <p class="mono">July 2026</p>
+            <p class="cert-desc">Practical tasks in exploratory data analysis, AI-driven delinquency prediction, data storytelling and an AI-powered collections strategy.</p>
+          </div>
+        </div>
+        <div class="cert-card" data-cert>
+          <div class="cert-img"><img src="assets/certificates/pg-dac-cdac-certificate.jpg" alt="PG Diploma in Advanced Computing certificate — C-DAC ACTS Pune" loading="lazy" /></div>
+          <div class="cert-info">
+            <span class="cert-provider">C-DAC ACTS, Pune</span>
+            <h3>PG Diploma in Advanced Computing — Grade A</h3>
+            <p class="mono">2023 — 2024</p>
+            <p class="cert-desc">900-hour full-time postgraduate diploma: Java, data structures &amp; algorithms, web technologies, databases, .NET and software engineering.</p>
+          </div>
+        </div>
+        <div class="cert-card" data-cert>
+          <div class="cert-img"><img src="assets/certificates/web-development-training.jpg" alt="Web Development Industrial Training certificate — Sensible Computers" loading="lazy" /></div>
+          <div class="cert-info">
+            <span class="cert-provider">Sensible Computers</span>
+            <h3>Industrial Training — Web Development</h3>
+            <p class="mono">June 2022</p>
+            <p class="cert-desc">Hands-on industrial training in HTML, CSS, MySQL, PHP and JavaScript — the foundation of my full-stack journey.</p>
+          </div>
+        </div>
+      </div>
+      <p class="cert-hint mono">Click any certificate to view it full size.</p>
+    </div>
+  </section>
+
+  <!-- ══════════ ACHIEVEMENTS ══════════ -->
+  <section class="section" id="achievements">
+    <div class="container">
+      <p class="section-eyebrow mono">07 · Recognition</p>
+      <h2 class="section-title">Achievements <span class="grad-text">&amp; Recognition</span></h2>
+      <p class="section-sub">Milestones that shaped me — from competitive internships to production impact.</p>
+
+      <div class="ach-counters" id="achCounters">
+        <div class="counter"><span class="stat-num" data-count="2">0</span><span class="stat-plus">+</span><span class="stat-label">Years Experience</span></div>
+        <div class="counter"><span class="stat-num" data-count="3">0</span><span class="stat-plus">+</span><span class="stat-label">Certifications</span></div>
+        <div class="counter"><span class="stat-num" data-count="4">0</span><span class="stat-plus">+</span><span class="stat-label">Major Projects</span></div>
+        <div class="counter"><span class="stat-num" data-count="3">0</span><span class="stat-plus"></span><span class="stat-label">Internships Completed</span></div>
+      </div>
+
+      <div class="ach-grid">
+        <div class="ach-card" data-ach>
+          <div class="ach-img"><img src="assets/achievements/oasis-infobyte-java-internship.jpg" alt="Oasis Infobyte AICTE OIB-SIP Java Development internship certificate" loading="lazy" /></div>
+          <div class="ach-info">
+            <div class="ach-tags"><span class="ach-badge">Professional</span><span class="mono ach-year">2024</span></div>
+            <h3>AICTE OIB-SIP Internship — Java Development</h3>
+            <p class="ach-inst">Oasis Infobyte</p>
+            <p>Completed the one-month AICTE-recognised internship in Java Development with "wonderful remarks" from the program team.</p>
+          </div>
+        </div>
+        <div class="ach-card" data-ach>
+          <div class="ach-img"><img src="assets/achievements/codealpha-java-internship.jpg" alt="CodeAlpha Java Programming virtual internship certificate of achievement" loading="lazy" /></div>
+          <div class="ach-info">
+            <div class="ach-tags"><span class="ach-badge">Professional</span><span class="mono ach-year">2024</span></div>
+            <h3>Certificate of Achievement — Java Programming</h3>
+            <p class="ach-inst">CodeAlpha</p>
+            <p>Recognised as an active participant of the CodeAlpha Virtual Internship Program in Java Programming for dedication and hard work.</p>
+          </div>
+        </div>
+        <div class="ach-card" data-ach>
+          <div class="ach-img"><img src="assets/achievements/internpe-cpp-internship.jpg" alt="InternPe C++ programming internship completion certificate" loading="lazy" /></div>
+          <div class="ach-info">
+            <div class="ach-tags"><span class="ach-badge">Professional</span><span class="mono ach-year">2024</span></div>
+            <h3>Internship Completion — C++ Programming</h3>
+            <p class="ach-inst">InternPe</p>
+            <p>Completed a C++ programming internship, commended as "a sincere and dedicated intern with a professional attitude and very good knowledge of the job".</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ CONTACT ══════════ -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <p class="section-eyebrow mono">08 · Let's Connect</p>
+      <h2 class="section-title">Let's Build Something <span class="grad-text">Together</span></h2>
+      <p class="section-sub">Open to full-time roles, freelance projects and interesting conversations about full-stack &amp; GenAI engineering.</p>
+      <div class="contact-grid">
+        <form class="contact-form" id="contactForm" action="https://formsubmit.co/amitkumargupta13579@gmail.com" method="POST" data-contact="left">
+          <input type="hidden" name="_subject" value="New message from portfolio website" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_next" value="https://amit13579.github.io/my-portfolio/?sent=1" />
+          <div class="field"><input type="text" name="name" id="fName" required placeholder=" " /><label for="fName">Full Name</label></div>
+          <div class="field"><input type="email" name="email" id="fEmail" required placeholder=" " /><label for="fEmail">Email Address</label></div>
+          <div class="field"><input type="text" name="subject" id="fSubject" required placeholder=" " /><label for="fSubject">Subject</label></div>
+          <div class="field"><textarea name="message" id="fMessage" rows="6" required placeholder=" "></textarea><label for="fMessage">Message</label></div>
+          <button type="submit" class="btn btn-primary btn-send">Send Message ✦</button>
+        </form>
+        <aside class="contact-info" data-contact="right">
+          <h3>Contact Information</h3>
+          <a class="ci-row" href="mailto:amitkumargupta13579@gmail.com"><span class="ci-ico">✉️</span><span><b>Email</b><br />amitkumargupta13579@gmail.com</span></a>
+          <a class="ci-row" href="tel:+919644784218"><span class="ci-ico">📞</span><span><b>Phone</b><br />+91 96447 84218</span></a>
+          <div class="ci-row"><span class="ci-ico">📍</span><span><b>Location</b><br />Bhilai, Chhattisgarh, India</span></div>
+          <a class="ci-row" href="https://linkedin.com/in/amit-kumar-gupta" target="_blank" rel="noopener"><span class="ci-ico">🔗</span><span><b>LinkedIn</b><br />linkedin.com/in/amit-kumar-gupta</span></a>
+          <a class="ci-row" href="https://github.com/amit13579" target="_blank" rel="noopener"><span class="ci-ico">🐙</span><span><b>GitHub</b><br />github.com/amit13579</span></a>
+        </aside>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-name"><span class="logo-badge">AK</span> Amit Kumar Gupta</p>
+      <p class="footer-tag">Building fast, secure, intelligent web applications — end to end.</p>
+      <div class="footer-socials">
+        <a href="https://github.com/amit13579" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+        <a href="https://linkedin.com/in/amit-kumar-gupta" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+        <a href="mailto:amitkumargupta13579@gmail.com" aria-label="Email">Email</a>
+      </div>
+      <p class="footer-copy mono">© 2026 Amit Kumar Gupta · Built with plain HTML, CSS &amp; GSAP</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox"><button class="lb-close" aria-label="Close">×</button><img src="" alt="Certificate — full size" /></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
