@@ -261,11 +261,25 @@ export const certifications = [
     date: "June 2022",
     desc: "Hands-on industrial training in HTML, CSS, MySQL, PHP and JavaScript — the foundation of my full-stack journey.",
   },
+  {
+    img: "assets/certificates/ibm-cognitiveclass-db0101en.jpg",
+    provider: "IBM Skills Network · CognitiveClass.ai",
+    title: "SQL and Relational Databases 101 (DB0101EN)",
+    date: "August 2026",
+    desc: "Core relational database concepts and hands-on SQL — querying, joins, functions and working with DB2 on Cloud.",
+  },
+  {
+    img: "assets/certificates/foundation-prompt-engineering.jpg",
+    provider: "AWS Training & Certification",
+    title: "Foundations of Prompt Engineering",
+    date: "August 2026",
+    desc: "Core techniques for designing effective prompts for large language models, including prompt patterns, iteration and best practices.",
+  },
 ];
 
 export const achievementStats = [
   { value: 2, suffix: "+", label: "Years Experience" },
-  { value: 3, suffix: "+", label: "Certifications" },
+  { value: 5, suffix: "+", label: "Certifications" },
   { value: 4, suffix: "+", label: "Major Projects" },
   { value: 3, suffix: "", label: "Internships Completed" },
 ];
